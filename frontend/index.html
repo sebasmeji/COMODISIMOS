@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Preoperacional COMODISIMOS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main id="app">
+    <header>
+      <h1>COMODISIMOS - INSPECTORES</h1>
+      <!--  <p class="subtitle">Panel de Inspectores</p> -->
+      <div id="greeting" class="muted hidden"></div>
+    </header>
+
+    <section id="auth">
+      <form id="loginForm">
+        <label>
+          <input placeholder="Usuario" name="username" required />
+        </label>
+        <label>
+          <input placeholder="Contraseña" name="password" type="password" required />
+        </label>
+        <button type="submit">ENTRAR</button>
+      </form>
+      <button id="showRegister">CREAR USUARIO</button>
+      <button id="showForgotPassword" class="btn-secondary">OLVIDE MI CONTRASEÑA</button>
+      <form id="registerForm" class="hidden">
+        <label> <input placeholder="Nombre y Apellido" name="name" required /></label>
+        <label> <input placeholder="Usuario" name="username" required /></label>
+        <label> <input placeholder="Contraseña" name="password" type="password" required /></label>
+        <button type="submit">CREAR USUARIO</button>
+      </form>
+      <form id="forgotPasswordForm" class="hidden">
+        <h3>Recuperar Contraseña</h3>
+        <label>
+          <input placeholder="Usuario" name="username" required />
+        </label>
+        <label>
+          <input placeholder="Correo Electrónico" name="email" type="email" required />
+        </label>
+        <button type="submit">ENVIAR VERIFICACIÓN</button>
+      </form>
+    </section>
+
+    <section id="flow" class="hidden">
+      <div id="preopSection">
+        <h2>Preoperacional</h2>
+        <label>Vehículo
+          <select id="vehicleType">
+            <option value="carro">Carro</option>
+            <option value="moto">Moto</option>
+          </select>
+        </label>
+        <div id="preopQuestions"></div>
+        <button id="savePreop">SIGUIENTE</button>
+      </div>
+
+      <div id="processSelection" class="hidden">
+        <h3>Seleccionar proceso</h3>
+        <button data-process="diagnostico">DIAGNOSTICO</button>
+        <button data-process="toma_medidas">TOMA DE MEDIDAS</button>
+        <button data-process="toma_ingreso">TOMA DE MEDIDAS DE INGRESO</button>
+      </div>
+
+      <div id="diagnosticForm" class="hidden"></div>
+      <div id="measurementsForm" class="hidden"></div>
+      <div id="ingresoForm" class="hidden"></div>
+    </section>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>

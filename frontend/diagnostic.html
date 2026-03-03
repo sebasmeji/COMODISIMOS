@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Diagnósticos COMODISIMOS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Diagnóstico</h1>
+    <!--<p class="subtitle">Complete el formulario y guarde</p>-->
+    </header>
+    <form id="diagForm">
+      <label>Estado del colchón
+        <select id="hygiene">
+          <option>limpio</option>
+          <option>sucio</option>
+          <option>muy sucio</option>
+          <option>anti-higienico</option>
+        </select>
+      </label>
+      <label>Tipo de cama
+        <select id="baseType">
+          <option>cama tradicional</option>
+          <option>base cama</option>
+          <option>Somier COMODISIMOS</option>
+        </select>
+      </label>
+      <label>Tipo de cama
+        <select id="baseType">
+          <option>cama tradicional</option>
+          <option>base cama</option>
+          <option>Somier COMODISIMOS</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="preserve"> Conserva el plástico original</label>
+      <label><input type="checkbox" id="surfaceUniform"> Superficie uniforme</label>
+      <label><input type="checkbox" id="surfaceUniform"> Huella corporal</label>
+      <label><input type="checkbox" id="surfaceUniform"> Hundimiento que supera el limite permitido </label>
+      <label>Observaciones<textarea id="diagObs" placeholder="ingresa alguna novedad si es necesario"></textarea></label>
+      <button id="saveDiag" type="button">Guardar</button>
+    </form>
+    <p><a href="/">Volver</a></p>
+  </main>
+  <script src="diagnostic.js"></script>
+</body>
+</html>

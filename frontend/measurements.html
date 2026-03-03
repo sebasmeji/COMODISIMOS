@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Toma de Medidas COMODISIMOS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Toma de Medidas</h1>
+    <!-- <p class="subtitle">Registrar medidas del colchón</p> -->
+    </header>
+    <form id="measForm">
+      <label>Largo <input id="mLength" type="number" step="0.1"></label>
+      <label>Ancho <input id="mWidth" type="number" step="0.1"></label>
+      <label>Alto <input id="mHeight" type="number" step="0.1"></label>
+      <label>Altura del espaldar <input id="mBackrest" type="number" step="0.1"></label>
+      <label>Estado de las tablas <input id="mPlank" ></label>
+      <label>Tipo de cama <input id="mBedType"></label>
+      <label>Observaciones <textarea id="mObs" placeholder="ingresa alguna novedad si es necesario"></textarea></label>
+      <label>¿Restricciones de ingreso?<select id="mFits"><option value="0">No</option><option value="1">Si</option></select></label>
+      <button id="saveMeasures" type="button">Guardar</button>
+    </form>
+    <p><a href="/">Volver</a></p>
+  </main>
+  <script src="measurements.js"></script>
+</body>
+</html>

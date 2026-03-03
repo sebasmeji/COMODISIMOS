@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Medidas de ingreso COMODISIMOS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Toma de Medidas de Ingreso</h1>
+    <!--<p class="subtitle">Registrar medidas de ingreso</p>-->
+    </header>
+    <form id="ingForm">
+      <label>Largo <input id="iLength" type="number" step="0.1"></label>
+      <label>Ancho <input id="iWidth" type="number" step="0.1"></label>
+      <label>Observaciones <textarea id="iObs" placeholder="ingresa alguna novedad si es necesario"></textarea></label>
+      <label>¿Ingresa?<select id="iEnters"><option value="1">SI</option><option value="0">NO</option></select></label>
+      <button id="saveIngreso" type="button">Guardar Ingreso</button>
+    </form>
+    <p><a href="/">Volver</a></p>
+  </main>
+  <script src="ingreso.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+/**
+ * COMODISIMOS - Estilos Principales
+ * Diseño responsive y mobile-first
+ */
+
+/* ========================================================================== */
+/* VARIABLES Y CONFIGURACIÓN GLOBAL */
+/* ========================================================================== */
+
+:root {
+  --accent-color: #0b5cff;
+  --background-color: #ffffff;
+  --text-muted: #666666;
+  --border-color: #dddddd;
+  --light-gray: #f1f1f1;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --border-radius: 6px;
+}
+
+/* ========================================================================== */
+/* ESTILOS GLOBALES */
+/* ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: #111111;
+}
+
+/* ========================================================================== */
+/* LAYOUT PRINCIPAL */
+/* ========================================================================== */
+
+main {
+  padding: var(--spacing-medium);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ========================================================================== */
+/* ENCABEZADO */
+/* ========================================================================== */
+
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: var(--spacing-small) 0 var(--spacing-medium);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ========================================================================== */
+/* CONTENEDORES Y ESTRUCTURAS */
+/* ========================================================================== */
+
+.menu-container {
+  padding: var(--spacing-medium);
+}
+
+label {
+  display: block;
+  margin: var(--spacing-medium) 0;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(11, 92, 255, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0a4dd4;
+}
+
+button:active {
+  background-color: #0844ab;
+}
+
+/**
+ * Botón secundario (estilos alternativos)
+ * Utilizado para acciones menos prioritarias
+ */
+.btn-secondary {
+  background-color: #6c757d;
+  margin-top: var(--spacing-small);
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-secondary:active {
+  background-color: #4e555b;
+}
+
+/* Botón de logout - estilo diferenciado */
+.btn-logout {
+  margin-top: var(--spacing-medium);
+  background-color: #dc3545;
+}
+
+.btn-logout:hover {
+  background-color: #c82333;
+}
+
+.btn-logout:active {
+  background-color: #bd2130;
+}
+
+/**
+ * Títulos de formularios (h3 dentro de formularios)
+ */
+form h3 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-medium);
+  font-size: 1.1rem;
+  color: #111111;
+}
+
+/* ========================================================================== */
+/* UTILIDADES */
+/* ========================================================================== */
+
+.hidden {
+  display: none !important;
+}
+
+.muted {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ========================================================================== */
+/* PREGUNTAS / CAMPOS DE FORMULARIO */
+/* ========================================================================== */
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-small) 0;
+  border-bottom: 1px solid var(--light-gray);
+  gap: var(--spacing-medium);
+}
+
+.question span {
+  flex: 1;
+  font-weight: 500;
+}
+
+.question input,
+.question select {
+  flex: 1;
+  margin: 0;
+}
+
+/* ========================================================================== */
+/* MEDIA QUERIES - RESPONSIVE */
+/* ========================================================================== */
+
+@media (min-width: 700px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    padding: var(--spacing-medium) * 2;
+  }
+}
