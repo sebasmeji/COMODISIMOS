@@ -7,7 +7,7 @@
 // CONFIGURACIÓN
 // ============================================================================
 
-const API_URL = 'http://localhost:4000';
+const API_URL = 'http://localhost:4000'
 
 // ============================================================================
 // UTILIDADES
@@ -19,7 +19,7 @@ const API_URL = 'http://localhost:4000';
  * @returns {string|null} - Valor del parámetro o null
  */
 function getUrlParameter(parameterName) {
-  return new URLSearchParams(window.location.search).get(parameterName);
+  return new URLSearchParams(window.location.search).get(parameterName)
 }
 
 /**
@@ -28,18 +28,18 @@ function getUrlParameter(parameterName) {
  * @returns {string} - Primer nombre
  */
 function extractFirstName(fullName) {
-  return (fullName || '').toString().trim().split(' ')[0] || fullName;
+  return (fullName || '').toString().trim().split(' ')[0] || fullName
 }
 
 // ============================================================================
 // VALIDACIÓN DE INSPECCIÓN
 // ============================================================================
 
-const inspectionId = getUrlParameter('inspectionId');
+const inspectionId = getUrlParameter('inspectionId')
 
 // Validar que se haya proporcionado un ID de inspección
 if (!inspectionId) {
-  alert('Error: ID de inspección no proporcionado');
+  alert('Error: ID de inspección no proporcionado')
   window.location.href = 'index.html';
 }
 
@@ -52,13 +52,13 @@ if (!inspectionId) {
  */
 async function initializeMenu() {
   // Obtener datos del usuario y mostrar saludo
-  await displayUserGreeting();
+  await displayUserGreeting()
 
   // Asignar eventos a botones de procesos
-  attachProcessButtons();
+  attachProcessButtons()
 
   // Asignar evento al botón de logout
-  attachLogoutButton();
+  attachLogoutButton()
 }
 
 /**
@@ -71,13 +71,13 @@ async function displayUserGreeting() {
     });
 
     if (!response.ok) {
-      console.warn('No se pudo obtener datos del usuario');
-      return;
+      console.warn('No se pudo obtener datos del usuario')
+      return
     }
 
-    const userData = await response.json();
-    const userName = userData.user?.name || userData.user?.username || '';
-    const firstName = extractFirstName(userName);
+    const userData = await response.json()
+    const userName = userData.user?.name || userData.user?.username || ''
+    const firstName = extractFirstName(userName)
 
     const greetingElement = document.getElementById('greetingMenu');
     if (greetingElement) {
