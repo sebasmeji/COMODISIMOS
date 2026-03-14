@@ -42,7 +42,6 @@ const PREOP_QUESTIONS = [
   'Estado de llantas',
   'Fuga de liquidos',
   'Casco de seguridad',
-  'Casco de seguridad',
   'Cinturones en buen estado'
 ];
 

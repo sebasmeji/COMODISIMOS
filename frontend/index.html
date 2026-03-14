@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Preoperacional COMODISIMOS</title>
+<title>COMODISIMOS - INSPECTORES</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -12,22 +12,22 @@
   <main id="app">
     <header>
       <h1>COMODISIMOS - INSPECTORES</h1>
-      <!--  <p class="subtitle">Panel de Inspectores</p> -->
+      <p class="subtitle">Panel de Inspectores</p>
       <div id="greeting" class="muted hidden"></div>
     </header>
 
     <section id="auth">
       <form id="loginForm">
         <label>
-          <input placeholder="Usuario" name="username" required />
+          <input type="text" placeholder="Usuario" name="username" required />
         </label>
         <label>
-          <input placeholder="Contraseña" name="password" type="password" required />
-        </label>
+          <input type="password" placeholder="Contraseña" name="password" required />
+        </label><br>
         <button type="submit">ENTRAR</button>
-      </form>
+      </form><br>
       <button id="showRegister">CREAR USUARIO</button>
-      <button id="showForgotPassword" class="btn-secondary">OLVIDE MI CONTRASEÑA</button>
+      <button id="showForgotPassword" class="btn-secondary">Olvide mi contraseña</button>
       <form id="registerForm" class="hidden">
         <label> <input placeholder="Nombre y Apellido" name="name" required /></label>
         <label> <input placeholder="Usuario" name="username" required /></label>

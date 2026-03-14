@@ -68,8 +68,8 @@ document.getElementById('saveIngreso').addEventListener('click', async () => {
     }
 
     alert('Ingreso guardado exitosamente');
-    
-    // Volver al menú de procesos
+    procesos
+    // Volver al menú de 
     window.location.href = `menu.html?inspectionId=${inspectionId}`;
   } catch (error) {
     console.error('Error al enviar ingreso:', error);
